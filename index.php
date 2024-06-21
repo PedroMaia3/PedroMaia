@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Pessoal - Engenharia Informática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#report">Relatório Final</a></li>
+                <li><a href="#egoi">Sobre a E-goi</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao meu website</h1>
+            <p>Este site é o resultado final da minha licenciatura em Engenharia Informática.</p>
+            <img src="imagens/Ispgaya.png" alt="Faculdade" class="responsive-img">
+        </section>
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Olá, meu nome é Pedro Maia e sou um recém-licenciado em Engenharia Informática pela Ispgaya. Tenho uma paixão por tecnologia e inovação, e durante o meu curso, desenvolvi habilidades em várias áreas da informática, incluindo desenvolvimento web, programação, e análise de sistemas.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Ao longo da minha licenciatura, participei em diversos projetos que me permitiram aplicar os conhecimentos adquiridos. Aqui estão alguns dos trabalhos que desenvolvi:</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Projeto A</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Projeto B</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Projeto C</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+            </div>
+        </section>
+        <section id="report">
+            <h2>Relatório Final</h2>
+            <img src="imagens/e-goi.png" alt="E-goi" class="responsive-img">
+            <p>Durante o meu estágio na E-goi, trabalhei em diversos projetos interessantes e desafiadores. Você pode fazer o download do meu relatório final de estágio no link abaixo:</p>
+            <a href="ficheiros/relatorio-final.pdf" download>Download Relatório Final</a>
+        </section>
+        <section id="egoi">
+            <h2>Sobre a E-goi</h2>
+            <p>A E-goi é uma empresa inovadora que oferece soluções de marketing digital automatizado. Durante o meu estágio, tive a oportunidade de trabalhar com uma equipa talentosa e de participar em projetos que utilizam tecnologia de ponta para ajudar empresas a otimizar as suas estratégias de marketing. A experiência foi extremamente enriquecedora e contribuiu significativamente para o meu desenvolvimento profissional.</p>
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Se desejar entrar em contato comigo, pode utilizar as seguintes informações:</p>
+            <ul>
+                <li>Email: ispg2019102346@ispgaya.pt</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/pedro-maia-5b8325206/" target="_blank">Perfil</a></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pedro Maia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
