@@ -25,8 +25,8 @@ a,
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* Links de conteúdo com sublinhado animado */
-.resume-section-content a:not(.social-icon) {
+/* Links de conteúdo com sublinhado animado (exceto botões) */
+.resume-section-content a:not(.social-icon):not(.btn-cv) {
     position: relative;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
@@ -35,8 +35,105 @@ a,
     background-size: 0% 2px;
 }
 
-.resume-section-content a:not(.social-icon):hover {
+.resume-section-content a:not(.social-icon):not(.btn-cv):hover {
     background-size: 100% 2px;
+}
+
+/* Botões de ação do cabeçalho (CV, e-mail, LinkedIn) */
+.cv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.1rem;
+    border: 2px solid #bd5d38;
+    border-radius: 6px;
+    background-color: #bd5d38;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.btn-cv:hover,
+.btn-cv:focus-visible {
+    background-color: #a14d2e;
+    border-color: #a14d2e;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.btn-cv-outline {
+    background-color: transparent;
+    color: #bd5d38;
+}
+
+.btn-cv-outline:hover,
+.btn-cv-outline:focus-visible {
+    background-color: #bd5d38;
+    border-color: #bd5d38;
+}
+
+@media (max-width: 575.98px) {
+    .btn-cv {
+        width: 100%;
+    }
+}
+
+/* Espaço entre o título de uma entrada e a sua lista */
+.resume-section-content h3 + ul {
+    margin-top: 0.5rem;
+}
+
+/* Experiências antigas em formato compacto (uma linha cada) */
+.exp-compact {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.exp-compact li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.25rem 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.exp-compact li:last-child {
+    border-bottom: 0;
+}
+
+.exp-compact li > span:first-child {
+    flex: 1 1 18rem;
+}
+
+.exp-compact li > .text-primary {
+    white-space: nowrap;
+}
+
+/* Competências em "chips" */
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-chips li {
+    padding: 0.3rem 0.8rem;
+    border: 1px solid rgba(189, 93, 56, 0.35);
+    border-radius: 999px;
+    background-color: rgba(189, 93, 56, 0.06);
+    font-size: 0.95rem;
 }
 
 /* Ícones sociais: crescem e ganham cor ao passar o rato */
